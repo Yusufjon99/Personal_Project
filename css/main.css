@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  padding: 0 10px;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  /* background-image: url(../img/header/header-bg.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 56px;
+  margin-bottom: 25px;
+  line-height: 130%;
+}
+
+.header__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header__arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.main {
+  padding-top: 80px;
+  padding-bottom: 115px;
+  color: #000000;
+  background: #e0e0e0;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.main__portfolio__cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #ffffff;
+  max-width: 540px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+  transition: transform 0.3s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card__link {
+  padding: 20px 20px 30px 20px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease-in;
+}
+.card__link:hover {
+  color: rgb(39, 91, 236);
+}
+
+.card:last-child,
+.card:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  margin: 20px 0 13px 0;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 130px;
+  background-color: #1e4776;
+  color: #ffffff;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__col {
+  flex-grow: 1;
+  max-width: 350px;
+}
+.footer__copyright {
+  color: #7e9ec9;
+  line-height: 1.3;
+}
+
+.footer__copyright-name {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.footer__copyright p {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer__icons {
+}
+
+.footer__icons-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  padding-bottom: 15px;
+}
+
+.footer__icons-row {
+  display: flex;
+  align-items: center;
+}
+
+.footer__icons-row > * + * {
+  margin-left: 30px;
+}
+
+.footer__button {
+  display: inline-block;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  padding: 14px 30px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+
+.footer__button:hover {
+  background-color: #ffffff;
+  color: #1e4776;
+}
+
+.footer__contacts p {
+  margin: 15px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #7e9ec9;
+}
+
+/* Project */
+
+.header__project {
+  padding: 80px 0 120px 0;
+  text-align: center;
+}
+
+.project__title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.3;
+}
+
+.project__img {
+  margin-bottom: 70px;
+}
+
+.project__discription {
+  margin: 0 auto 60px;
+  max-width: 730px;
+}
+
+.project__discription p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.project__discription a {
+  text-decoration: none;
+}
+
+.project__btn-left {
+  display: inline-block;
+  border: 3px solid #275bec;
+  border-radius: 50px;
+  padding: 20px 30px;
+  color: #275bec;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+}
+
+.project__btn-left:hover {
+  background-color: #275bec;
+  color: #ffffff;
+}
+
+.block {
+  width: 800px;
+  height: 800px;
+  background-color: blueviolet;
+}
